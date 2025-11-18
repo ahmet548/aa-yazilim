@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import logo_ from './assets/logo_.png';
+
+const favicon = document.createElement('link');
+favicon.rel = 'icon';
+favicon.href = logo_;
+document.head.appendChild(favicon);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
